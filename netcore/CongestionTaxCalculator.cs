@@ -37,7 +37,7 @@ public class CongestionTaxCalculator
         return totalFee;
     }
 
-    private bool IsTollFreeVehicle(Vehicle vehicle)
+    public static bool IsTollFreeVehicle(Vehicle vehicle)
     {
         if (vehicle == null) return false;
         String vehicleType = vehicle.GetVehicleType();

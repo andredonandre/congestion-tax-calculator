@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Calculator.UI/1.0.0": {
+        "dependencies": {
+          "congestion-tax-calculator-net-core": "1.0.0"
+        },
+        "runtime": {
+          "Calculator.UI.dll": {}
+        }
+      },
+      "congestion-tax-calculator-net-core/1.0.0": {
+        "runtime": {
+          "congestion-tax-calculator-net-core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Calculator.UI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "congestion-tax-calculator-net-core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

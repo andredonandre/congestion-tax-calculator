@@ -1,0 +1,56 @@
+﻿@using congestion.calculator
+@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<div>
+    <div class="row">
+        <div class="col-6">
+            <h2>Caculate Tax</h2>
+            <label>Select vehicle type:</label>
+            <select class="form-select" aria-label="Select vehicla type">
+                <option selected>Car</option>
+                <option value="1">Motor bike</option>
+            </select>
+
+             <label>Select Category:</label>
+            <select class="form-select" aria-label="Select vehicla type">
+                <option selected>Car</option>
+                <option value="1">Motor bike</option>
+            </select>
+           <div>
+               <input type="date" class="form-control" />
+               <button class="btn btn-primary">Add time</button>
+           </div>
+            <div class="well">
+
+            </div>
+            <div>
+                <button>Calculate Tax</button>
+            </div>
+        </div>
+        <div class="col-6">
+            <h3>Add time</h3>
+        </div>
+    </div>    
+</div>
+
+
+
+
+
+@code{
+    private List<DateTime> Dates = new List<DateTime>();
+    private Vehicle vehicle;
+    protected override async Task OnInitializedAsync()
+    {
+        //forecasts = await ForecastService.GetForecastAsync(DateOnly.FromDateTime(DateTime.Now));
+    }
+
+}
