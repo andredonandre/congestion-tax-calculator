@@ -16,48 +16,50 @@ namespace Calculator.Tests
             Assert.Pass();
         }
         //Toll free vehical tests
+        #region Tests for toll free vehicles
         [Test]
         public void IsTollFreeVehicleTestMotorcycle()
         {
-            Motorbike bike = new Motorbike();           
-            Assert.True(CongestionTaxCalculator.IsTollFreeVehicle(bike));
+            Motorbike v = new Motorbike();
+            Assert.True(CongestionTaxCalculator.IsTollFreeVehicle(v));
         }
         [Test]
         public void IsTollFreeVehicleTestCar()
         {
-            Car car = new Car();
-            Assert.False(CongestionTaxCalculator.IsTollFreeVehicle(car));
+            Car v = new Car();
+            Assert.False(CongestionTaxCalculator.IsTollFreeVehicle(v));
         }
-        //[Test]
-        //public void IsTollFreeVehicleTestBus()
-        //{
-        //    Motorbike bike = new Motorbike();
-        //    Assert.True(CongestionTaxCalculator.IsTollFreeVehicle(bike));
-        //}
-        //[Test]
-        //public void IsTollFreeVehicleTestEmergencyVehicle()
-        //{
-        //    Motorbike bike = new Motorbike();
-        //    Assert.True(CongestionTaxCalculator.IsTollFreeVehicle(bike));
-        //}
-        //[Test]
-        //public void IsTollFreeVehicleTestDiplomatic()
-        //{
-        //    Motorbike bike = new Motorbike();
-        //    Assert.True(CongestionTaxCalculator.IsTollFreeVehicle(bike));
-        //}
-        //[Test]
-        //public void IsTollFreeVehicleTestMilitary()
-        //{
-        //    Motorbike bike = new Motorbike();
-        //    Assert.True(CongestionTaxCalculator.IsTollFreeVehicle(bike));
-        //}
+        [Test]
+        public void IsTollFreeVehicleTestBus()
+        {
+            Bus v = new Bus();
+            Assert.True(CongestionTaxCalculator.IsTollFreeVehicle(v));
+        }
+        [Test]
+        public void IsTollFreeVehicleTestEmergencyVehicle()
+        {
+            Emergency v = new Emergency();
+            Assert.True(CongestionTaxCalculator.IsTollFreeVehicle(v));
+        }
+        [Test]
+        public void IsTollFreeVehicleTestDiplomatic()
+        {
+            Diplomat v = new Diplomat();
+            Assert.True(CongestionTaxCalculator.IsTollFreeVehicle(v));
+        }
+        [Test]
+        public void IsTollFreeVehicleTestMilitary()
+        {
+            Military v = new Military();
+            Assert.True(CongestionTaxCalculator.IsTollFreeVehicle(v));
+        }
 
-        //public void IsTollFreeVehicleTestForeign()
-        //{
-        //    Motorbike bike = new Motorbike();
-        //    Assert.True(CongestionTaxCalculator.IsTollFreeVehicle(bike));
-        //}
+        public void IsTollFreeVehicleTestForeign()
+        {
+            Foreign v = new Foreign();
+            Assert.True(CongestionTaxCalculator.IsTollFreeVehicle(v));
+        }
+        #endregion
 
         [Test]
         public void IsTollFreeDateTest()

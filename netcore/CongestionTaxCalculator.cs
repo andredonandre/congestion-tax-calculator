@@ -10,7 +10,7 @@ public class CongestionTaxCalculator
          * @return - the total congestion tax for that day
          */
 
-    public int GetTax(Vehicle vehicle, DateTime[] dates)
+    public int GetTax(IVehicle vehicle, DateTime[] dates)
     {
         DateTime intervalStart = dates[0];
         int totalFee = 0;
@@ -37,7 +37,7 @@ public class CongestionTaxCalculator
         return totalFee;
     }
 
-    public static bool IsTollFreeVehicle(Vehicle vehicle)
+    public static bool IsTollFreeVehicle(IVehicle vehicle)
     {
         if (vehicle == null) return false;
         String vehicleType = vehicle.GetVehicleType();
@@ -46,10 +46,10 @@ public class CongestionTaxCalculator
                vehicleType.Equals(TollFreeVehicles.Emergency.ToString()) ||
                vehicleType.Equals(TollFreeVehicles.Diplomat.ToString()) ||
                vehicleType.Equals(TollFreeVehicles.Foreign.ToString()) ||
-               vehicleType.Equals(TollFreeVehicles.Military.ToString());
+               vehicleType.Equals(TollFreeVehicles.Military.ToString()) || vehicleType.Equals(TollFreeVehicles.Bus.ToString());
     }
 
-    public int GetTollFee(DateTime date, Vehicle vehicle)
+    public int GetTollFee(DateTime date, IVehicle vehicle)
     {
         if (IsTollFreeDate(date) || IsTollFreeVehicle(vehicle)) return 0;
 
@@ -100,6 +100,7 @@ public class CongestionTaxCalculator
         Emergency = 2,
         Diplomat = 3,
         Foreign = 4,
-        Military = 5
+        Military = 5,
+        Bus = 6
     }
 }

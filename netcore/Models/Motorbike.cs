@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace congestion.calculator
 {
-    public class Car : Vehicle
+    public class Motorbike : IVehicle
     {
-        public String GetVehicleType()
+        public string GetVehicleType()
         {
-            return "Car";
+            return "Motorcycle";
         }
     }
 }
