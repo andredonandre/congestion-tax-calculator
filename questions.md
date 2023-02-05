@@ -26,7 +26,7 @@ Goal: Ensure software behaviour is normal, create usable entry point,Set up grou
 - The application will not be communicating with other systems
 - For now, the focus of the calculator is Sweden
 - Only official Public holidays for the year 2013 in Sweden are valid
-- Unique identification of vehicle is not necessary for this use case
+- Unique identification of vehicles is not necessary for this use case
 
 
 # Additional work Improvements
