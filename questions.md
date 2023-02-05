@@ -1,16 +1,38 @@
-#QUESTIONs
+# Execution Approach
+Goal: Ensure software behaviour is normal, create usable entry point,Set up groundwork for next steps.
+- First focus was to understand the code written and how it was organised in relation to the eexpected behaviour of the program.
+- I then Identified testable units of the code.
+- Wrote tests based on the requirements. This helped to identify parts of the program that were not working as expected.
+- Created a blazor project as entry point to the application. This served also as a UI for testing purposes as well.
+- Created a c# class library project that holds the data access implmentation for Building the CMS.
 
-API entry point/ UI entry point
-how will users be interating with the calculator?
-Will the calculator be interacting with another system?
+# Questions
 
-Should the calculator be limited to One country(Sweden)?
-Should the data be modelled with Global scalability in mind?
-Are the types of rules limited to the ones stated or should we consider the posibility of new rules?
+1 - how will users be interating with the calculator?
+
+2 - Will the calculator be communicating with another system?
+
+3 - Should the calculator be limited to One country(Sweden)?
+
+4 - Should the data be modelled with Global scalability in mind?
+
+5 - Are the types of rules limited to the ones stated or should we consider the posibility of new rules?
+
+7 - What data should be editable in the CMS?
+
+**Are the dates test cases?
+
+# Assumptions made:
+- The application will not be communicating with other systems
+- For now, the focus of the calculator is Sweden
+- Only official Public holidays for the year 2013 in Sweden are valid
+- Unique identification of vehicle is not necessary for this use case
 
 
-Why are the methods not static?
-What data should be editable in the CMS?
+# Additional work Improvements
+- The Data model for the CMS and Project can be conceptualized more extensively with all use cases in mind
+- Data Is currently being stored on a local database but could be moved to a more accessible remote location. 
+- Times and their respective taxes should be stored outside of the logic.
+- The classification of vehicles can be improved i.e Vehicle types and Classifications should be differentiated 
 
-Are the dates test cases?
-
+# Note: Project is now targeting .net 7
