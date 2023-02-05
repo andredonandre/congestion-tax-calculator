@@ -976,7 +976,7 @@
       },
       "congestion-tax-calculator-net-core/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v7.0",
         "compile": {
           "bin/placeholder/congestion-tax-calculator-net-core.dll": {}
         },
@@ -3932,8 +3932,8 @@
     },
     "congestion-tax-calculator-net-core/1.0.0": {
       "type": "project",
-      "path": "../netcore/congestion-tax-calculator-net-core.csproj",
-      "msbuildProject": "../netcore/congestion-tax-calculator-net-core.csproj"
+      "path": "../congestion-tax-calculator/congestion-tax-calculator-net-core.csproj",
+      "msbuildProject": "../congestion-tax-calculator/congestion-tax-calculator-net-core.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3984,8 +3984,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Andrew\\Desktop\\other\\mulimuv\\congestion-tax-calculator\\netcore\\congestion-tax-calculator-net-core.csproj": {
-              "projectPath": "C:\\Users\\Andrew\\Desktop\\other\\mulimuv\\congestion-tax-calculator\\netcore\\congestion-tax-calculator-net-core.csproj"
+            "C:\\Users\\Andrew\\Desktop\\other\\mulimuv\\congestion-tax-calculator\\congestion-tax-calculator\\congestion-tax-calculator-net-core.csproj": {
+              "projectPath": "C:\\Users\\Andrew\\Desktop\\other\\mulimuv\\congestion-tax-calculator\\congestion-tax-calculator\\congestion-tax-calculator-net-core.csproj"
             }
           }
         }
