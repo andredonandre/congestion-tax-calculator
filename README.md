@@ -6,6 +6,7 @@ Goal: Ensure software behaviour is normal, create usable entry point,Set up grou
 - First focus was to understand the code written and how it was organised in relation to the eexpected behaviour of the program.
 - I then Identified testable units of the code.
 - Wrote tests based on the requirements. This helped to identify parts of the program that were not working as expected.
+- Fixed bugs that I could Identify from the tests.
 - Created a blazor project as entry point to the application. This served also as a UI for testing purposes as well.
 - Created a c# class library project that holds the data access implmentation for Building the CMS.
 
